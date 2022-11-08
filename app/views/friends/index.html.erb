@@ -14,7 +14,7 @@
   </thead>
     <% @friends.each do |friend| %>
 
-
+    <%if friend.user == current_user%>
   <tbody>
     <tr>
       <td><%=friend.first_name%>
@@ -28,6 +28,8 @@
 
           
     </tr>
+          <% end %>
+
       <% end %>
 
 
